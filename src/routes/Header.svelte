@@ -7,7 +7,7 @@
 
 <header class="top-0 z-40 flex-none mx-auto border-b border-gray-300 dark:border-gray-600 px-6">
   <Navbar color="none" fluid>
-    <NavBrand href="/">
+    <NavBrand href="{base}/">
       <div class="flex flex-col">
         <span class="py-0 text-2xl font-medium text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white w-20">MinusMC</span>
       </div>
