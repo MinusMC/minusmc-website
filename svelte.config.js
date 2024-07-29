@@ -12,9 +12,10 @@ const config = {
 		}),
 
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		}
-	}
+			base: process.env.NODE_ENV === "production" ? process.env.BASE_PATH : "",
+		},
+	},
+	extensions: ['.svelte', '.svx']
 };
 
 export default config;

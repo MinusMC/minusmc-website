@@ -24,19 +24,19 @@
   <HeroHeader class="flex flex-col px-8 md:px-12 mb-20">
     <Heading tag="h2" class="font-semibold mb-12 leading-relaxed text-gradient w-full text-center">Our products</Heading>
 
-    <div class="md:grid grid-cols-1 md:grid-cols-2 md:gap-16">
-      <div class="max-w-full h-48 border rounded-md px-6 py-6 flex">
-        <img src="{base}/minusbounce.png" class="h-36">
-        <div class="ml-10">
-          <Heading tag="h3" class="mb-6 font-bold tracking-tight text-gray-900 dark:text-white">MinusBounce</Heading>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      <div class="max-w-full h-56 border rounded-md px-4 py-6 flex">
+        <img src="{base}/minusbounce.png" class="h-36" alt="">
+        <div class="ml-6">
+          <Heading tag="h3" class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">MinusBounce</Heading>
           <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A free and open source Forge hacked client for Minecraft 1.8.9, bypass many anticheats such as Grim, Matrix, Intave and Vulcan.</p>
         </div>
       </div>
 
-      <div class="max-w-full h-48 border rounded-md px-6 py-6 flex">
-        <img src="{base}/liddellcord.png" class="h-36">
-        <div class="ml-10">
-          <Heading tag="h3" class="mb-6 font-bold tracking-tight text-gray-900 dark:text-white">LiddellCord</Heading>
+      <div class="max-w-full h-56 border rounded-md px-6 py-6 flex">
+        <img src="{base}/liddellcord.png" class="h-36" alt="">
+        <div class="ml-6">
+          <Heading tag="h3" class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">LiddellCord</Heading>
           <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A store that sells unbanned Minecraft accounts for cheating.</p>
         </div>
       </div>
