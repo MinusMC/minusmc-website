@@ -29,7 +29,7 @@
         <img src="{base}/minusbounce.png" class="h-36">
         <div class="ml-10">
           <Heading tag="h3" class="mb-6 font-bold tracking-tight text-gray-900 dark:text-white">MinusBounce</Heading>
-          <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A free and open source Forge hacked client for Minecraft 1.8.9.</p>
+          <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A free and open source Forge hacked client for Minecraft 1.8.9, bypass many anticheats such as Grim, Matrix, Intave and Vulcan.</p>
         </div>
       </div>
 
