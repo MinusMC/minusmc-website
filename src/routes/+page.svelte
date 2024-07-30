@@ -36,8 +36,8 @@
       <div class="max-w-full h-56 border rounded-md px-6 py-6 flex">
         <img src="{base}/liddellcord.png" class="h-36" alt="">
         <div class="ml-6">
-          <Heading tag="h3" class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">LiddellCord</Heading>
-          <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A store that sells unbanned Minecraft accounts for cheating.</p>
+          <Heading tag="h3" class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">Liddell Việt</Heading>
+          <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-400">A store that sells unbanned Minecraft accounts for Vietnamese cheat community.</p>
         </div>
       </div>
 
