@@ -46,4 +46,9 @@
       </div>
     </div>
   </HeroHeader>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© minusmc.xyz, idle.zzz ft. toidicakhia All rights reserved. Designed by MinusMC</p>
+  </footer>
 </main>

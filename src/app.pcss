@@ -330,84 +330,50 @@ input:focus, textarea:focus {
   color: #0072ff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-header-container {
-    padding: 1.5rem;
-  }
-
-  .product-grid {
-    padding: 0 1rem;
-  }
-
-  .product-card {
-    margin: 0.5rem;
-  }
-
-  .button {
-    font-size: 0.875rem;
-  }
-
-  .modal {
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-heading {
-    font-size: 2rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-  }
-
-  .section-heading {
-    font-size: 1.5rem;
-  }
-
-  .product-title {
-    font-size: 1.25rem;
-  }
-
-  .product-description {
-    font-size: 0.875rem;
-  }
-
-  .button {
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* Developer Team Section */
-.developer-team-section {
-  background: #f1f1f1;
-  border-radius: 0.75rem;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.developer-team-heading {
-  font-size: 2rem;
-  color: #333;
+/* Footer Styles */
+.footer {
+  background: rgba(255, 255, 255, 0.8); 
+  color: #333; 
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(8px); 
 }
 
-.developer-team-description {
-  font-size: 1rem;
-  color: #555;
-  text-align: center;
-  margin-bottom: 2rem;
+.footer a {
+  color: #0072ff; 
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.developer-team-logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+.footer a:hover {
+  color: #0056b3; 
+  text-shadow: 0 0 8px rgba(0, 114, 255, 0.7); 
 }
 
-.developer-team-logo img {
-  max-width: 100px;
-  border-radius: 0.5rem;
+.footer-text {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+.footer-text .copyright {
+  margin-bottom: 0.5rem;
+}
+
+.footer-text .design-credit {
+  font-size: 0.75rem;
+  color: #666; 
+}
+
+.footer-text .design-credit a {
+  color: #0072ff;
+}
+
+.footer-text .design-credit a:hover {
+  color: #0056b3;
 }
