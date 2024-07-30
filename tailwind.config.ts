@@ -1,17 +1,38 @@
-import flowbitePlugin from 'flowbite/plugin'
-
+import flowbitePlugin from 'flowbite/plugin';
 import type { Config } from 'tailwindcss';
 
-export default {
-	content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
-	darkMode: 'selector',
+const config: Config = {
+	content: [
+		'./src/**/*.{html,js,svelte,ts}', 
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
+	],
+	darkMode: 'class', 
 	theme: {
 		extend: {
 			fontFamily: {
-				lexend: "Lexend",
-			}
-		}
+				lexend: ['Lexend', 'sans-serif'], 
+			},
+			colors: {
+				customColor: '#f0f0f0',
+			},
+			animation: {
+				'spin-slow': 'spin 3s linear infinite',
+				'bounce-slow': 'bounce 2s infinite',
+				'fade-in': 'fadeIn 1s ease-in-out',
+			},
+			keyframes: {
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				bounce: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-15px)' },
+				},
+			},
+		},
 	},
+	plugins: [flowbitePlugin],
+};
 
-	plugins: [flowbitePlugin]
-} as Config;
+export default config;
