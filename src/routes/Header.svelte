@@ -19,6 +19,6 @@
       <NavLi class="text-gray-400 hover:text-gray-900 transition duration-300 ease-out hover:ease-in" href="{base}/#about">About</NavLi>
       <NavLi class="text-gray-400 hover:text-gray-900 transition duration-300 ease-out hover:ease-in" href="{base}/#products">Products</NavLi>
       <NavLi class="text-gray-400 hover:text-gray-900 transition duration-300 ease-out hover:ease-in" href="{base}/#contact">Contact</NavLi>
-    </NavUl>
+    </NavUl>    
   </Navbar>
 </header>

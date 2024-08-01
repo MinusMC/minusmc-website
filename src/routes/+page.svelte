@@ -4,6 +4,14 @@
   import { HeroHeader } from "flowbite-svelte-blocks";
   import { DiscordSolid, GithubSolid } from 'flowbite-svelte-icons';
   import { base } from '$app/paths';
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert("IP copied to clipboard!");
+    }).catch(() => {
+      alert("Failed to copy IP.");
+    });
+  };
 </script>
 
 <main class="animate-fade-up">
@@ -26,8 +34,8 @@
     </Heading>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:px-8">
-      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow-transform-mix hover:-translate-y-1 flex items-center p-4">
-        <Img src="{base}/minusbounce.png" class="h-32 object-cover rounded-lg transition-transform transform hover:scale-105" alt="MinusBounce" />
+      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow-transform-mix hover:-translate-y-1 flex items-center p-4 cursor-pointer" on:click={() => window.location.href='https://minusbounce.lol'}>
+        <Img src="{`${base}/minusbounce.png`}" class="h-32 object-cover rounded-lg transition-transform transform hover:scale-105" alt="MinusBounce" />
         <div class="ml-6">
           <Heading tag="h3" class="font-bold text-gray-800 mb-2">MinusBounce</Heading>
           <p class="text-gray-700">
@@ -36,12 +44,22 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow-transform-mix hover:-translate-y-1 flex items-center p-4">
-        <Img src="{base}/liddellcord.png" class="h-32 object-cover rounded-lg transition-transform transform hover:scale-105" alt="Liddell Việt" />
+      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow-transform-mix hover:-translate-y-1 flex items-center p-4 cursor-pointer" on:click={() => window.location.href='https://alts.minusmc.xyz'}>
+        <Img src="{`${base}/liddellcord.png`}" class="h-32 object-cover rounded-lg transition-transform transform hover:scale-105" alt="Liddell Việt" />
         <div class="ml-6">
           <Heading tag="h3" class="font-bold text-gray-800 mb-2">Liddell Việt</Heading>
           <p class="text-gray-700">
             A store that sells unbanned Minecraft accounts for Vietnamese cheat community.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow-transform-mix hover:-translate-y-1 flex items-center p-4 cursor-pointer" on:click={() => copyToClipboard('minusbounce.lol')}>
+        <Img src="{`${base}/anticheat_test.png`}" class="h-32 object-cover rounded-lg transition-transform transform hover:scale-105" alt="MinusMC AntiCheat Test" />
+        <div class="ml-6">
+          <Heading tag="h3" class="font-bold text-gray-800 mb-2">MinusMC AntiCheat Test</Heading>
+          <p class="text-gray-700">
+            A AntiCheat test server help you make many god config, not req premium account. Click to copy server IP.
           </p>
         </div>
       </div>
@@ -63,5 +81,4 @@
       </a>
     </div>
   </HeroHeader>
-
 </main>
