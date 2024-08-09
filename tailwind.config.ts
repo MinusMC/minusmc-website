@@ -1,4 +1,5 @@
 import flowbitePlugin from 'flowbite/plugin';
+import tailwindcssAnimated from 'tailwindcss-animated';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -30,9 +31,14 @@ const config: Config = {
 					'50%': { transform: 'translateY(-15px)' },
 				},
 			},
+			extend: {
+				screens: {
+				  'no-select': { 'user-select': 'none' },
+				},
+			},
 		},
 	},
-	plugins: [flowbitePlugin],
+	plugins: [flowbitePlugin, tailwindcssAnimated],
 };
 
 export default config;
