@@ -31,10 +31,8 @@ const config: Config = {
 					'50%': { transform: 'translateY(-15px)' },
 				},
 			},
-			extend: {
-				screens: {
-				  'no-select': { 'user-select': 'none' },
-				},
+			screens: {
+				'no-select': { 'user-select': 'none' },
 			},
 		},
 	},
